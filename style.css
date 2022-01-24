@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body{
+    background-color: whitesmoke;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    width: 325px;
+    height: 450px;
+    background-color: #8F8A8A;
+    border-radius: 8px;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    font-size: 35px;
+}
+
+.display p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    width: 88%;
+    height: 70%;
+    margin-top: 4%;
+    overflow: hidden;
+    text-align: right;
+}   
+
+.botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1%;
+    padding: 4%;
+    height: 75%;
+}
+
+.botoes button{
+    border-radius: 8px;
+    color: white;
+    background-color: #515353;
+    font-size: 25px;
+    border: transparent;
+}
+
+.botoes button:hover{
+    background-color: #626464;
+}
+
+.botoes button:active{
+    background-color: #404242;
+}
+
+.botoes .clear{
+    background-color: #AF4040;
+}
+
+.botoes .clear:hover{
+    background-color: #BF5151;
+}
+
+.botoes .clear:active{
+    background-color: #AE3030;
+}
+
+.botoes .operadores{
+    background-color: #216FB8;
+}
+
+.botoes .operadores:hover{
+    background-color: #327FC9;
+}
+
+.botoes .operadores:active{
+    background-color: #105EA7;
+}
+
+.botoes .naoClicavel:hover{
+    background-color: #515353;
+}
+
+.botoes .naoClicavel:active{
+    background-color: #515353;
+}
+
+a{
+    color: #105EA7;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
